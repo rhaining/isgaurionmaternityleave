@@ -18,14 +18,14 @@ Welcome back! :)
 <title>Is Gauri On Maternity Leave?</title>
 
 <meta property="og:title" content="Is Gauri On Maternity Leave?" />
-<meta property="og:description" content="Yes!" />
+<meta property="og:description" content="????" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="http://isgaurionmaternityleave.com/gauri_yes.jpg" />
+<meta property="og:image" content="http://isgaurionmaternityleave.com/gauri.jpg" />
 
 <style>
 body{
 	background-color: #000000;
-	background: url(gauri_yes.jpg) no-repeat center center fixed;
+	background: url(gauri.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -40,44 +40,13 @@ div#gauri{
 	font-family: 'Forum', serif;
 	padding-top:0pt;
 }
-div#gauri div#yes{
-	font-size: 500px;
-	line-height: 0.9em;
-	color: #ffffff;
-}
-div#gauri div#info{
-	font-size: 100px;
-	color: #eeeeee;
-}
 </style>
 </head>
 
 <body>
 	<div id="gauri">
-		<div id="yes">YES!</div>
-		<div id="info">(but she'll be back <span id="countdown"></span>!)</div>
+		???
 	</div>
 </body>
-
-<script>
-function updateDisplay(output){
-	document.getElementById("countdown").innerHTML = output;
-}
-
-var back_at = 1471514400;
-var now = Date.now() / 1000;
-var delta = Math.round(back_at - now);
-var one_day = 86400;
-var ten_hours = 36000;
-if(delta > one_day + ten_hours){
-	var number_of_days = Math.round(delta / one_day);
-	updateDisplay("in " + number_of_days + " days");
-}else if(delta > ten_hours){
-	updateDisplay("tomorrow");
-}else{
-	updateDisplay("today");
-}
-
-</script>
 
 </html>
